@@ -1,0 +1,22 @@
+{
+  "name": "skillslab_project_html_css_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamienGerard/skillslab_project_html_css_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamienGerard/skillslab_project_html_css_js/issues"
+  },
+  "homepage": "https://github.com/DamienGerard/skillslab_project_html_css_js#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

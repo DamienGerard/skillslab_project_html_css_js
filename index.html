@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Create Programme</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><h2></h2><a href="#">SKILLSLAB</a></h2></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+            <ul>
+                <li>Hello <a href="#">Admin</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Create Programme</h1><hr>
+            <form id="createProgrammeForm" action="">
+                <div class="form-element">
+                    <label for="programme-name">Programme Name:</label>
+                    <input type="text" id="programme-name" name="programme-name" value="" placeholder="e.g., Programming"  class="form-input">                
+                </div>
+                <div class="form-element">
+                    <label for="programme-desciption">Programme Desciption:</label>
+                    <textarea id="programme-desciption" name="programme-desciption" class="form-input"></textarea>                
+                </div>
+                <div class="form-element">
+                    <label for="courses" value="">Select courses:</label>
+                    <select name="courses" id="courses"  class="form-input">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="Programming">Programming</option>
+                        <option value="Web">Web</option>
+                        <option value="OOP">OOP</option>
+                        <option value="C#">C#</option>
+                    </select>
+                    <div class="chosen-courses"></div>
+                </div>
+                <div class="form-element form-element-inline">
+                    <div>
+                        <label for="start-date">Start date:</label>
+                        <input type="date" id="start-date" name="start-date" class="form-input"> 
+                    </div>
+                    <div>
+                        <label for="end-date">End date:</label>
+                        <input type="date" id="end-date" name="end-date" class="form-input"> 
+                    </div>
+                </div>
+                <div class="form-element">
+                    <input type="submit" value="Submit" class="form-input">                
+                </div>
+            </form>            
+        </div>
+
+    </main>
+    <footer>
+        <p>© 2021 SkillsLab</p>
+    </footer>
+</body>
+<script>
+    
+</script>
+
+</html>
