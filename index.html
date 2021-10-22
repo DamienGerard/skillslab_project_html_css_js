@@ -24,7 +24,7 @@
     <main>
         <div class="container">
             <h1 class="title">Create Programme</h1><hr>
-            <form id="createProgrammeForm" action="">
+            <form id="createProgrammeForm" action=""  onsubmit="event.preventDefault();">
                 <div class="form-element">
                     <label for="programme-name">Programme Name:</label>
                     <input type="text" id="programme-name" name="programme-name" value="" placeholder="e.g., Programming"  class="form-input">                
@@ -95,7 +95,7 @@
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+            <p>Submitting your form...</p>
           </div>
         
         </div>
@@ -103,6 +103,17 @@
     <footer>
         <p>© 2021 SkillsLab</p>
     </footer>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
 </body>
 <script>
     // Get the modal
