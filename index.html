@@ -34,14 +34,45 @@
                     <textarea id="programme-desciption" name="programme-desciption" class="form-input"></textarea>                
                 </div>
                 <div class="form-element">
-                    <label for="courses" value="">Select courses:</label>
-                    <select name="courses" id="courses"  class="form-input">
-                        <option disabled selected value> -- select an option -- </option>
-                        <option value="Programming">Programming</option>
-                        <option value="Web">Web</option>
-                        <option value="OOP">OOP</option>
-                        <option value="C#">C#</option>
-                    </select>
+                    <legend>Choose courses:</legend>
+                    <div class="courses">
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course1" name="course" value="course1">
+                          <label for="course1">Course1</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course2" name="course" value="course2">
+                          <label for="course2">Course2</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course3" name="course" value="course3">
+                          <label for="course3">Course3</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course4" name="course" value="course4">
+                          <label for="course4">Course4</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course5" name="course" value="course5">
+                          <label for="course5">course5</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course6" name="course" value="course6">
+                          <label for="course6">Course6</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course7" name="course" value="course7">
+                          <label for="course7">Course7</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course8" name="course" value="course8">
+                          <label for="course8">Course8</label>
+                        </div>
+                        <div class = "course-checkbox">
+                          <input type="checkbox" id="course9" name="course" value="course9">
+                          <label for="course9">Course9</label>
+                        </div>
+                    </div>
                     <div class="chosen-courses"></div>
                 </div>
                 <div class="form-element form-element-inline">
@@ -55,18 +86,50 @@
                     </div>
                 </div>
                 <div class="form-element">
-                    <input type="submit" value="Submit" class="form-input">                
+                    <input id="myBtn" type="submit" value="Submit" class="form-input">                
                 </div>
             </form>            
         </div>
-
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+        
+        </div>
     </main>
     <footer>
         <p>© 2021 SkillsLab</p>
     </footer>
 </body>
 <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
     
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var close = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    close.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 </script>
 
 </html>
